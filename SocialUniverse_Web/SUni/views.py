@@ -24,3 +24,9 @@ def login(request):
     }
     return render(request, 'SUni/login.html', context)
 
+def signup(request):
+    context = {
+        'title': 'Sign Up'
+    }
+    return render(request, 'SUni/signup.html', context)
+

@@ -6,4 +6,5 @@ urlpatterns = [
     path('contact/', views.contact, name='SUni-contact'),
     path('about/', views.about, name='SUni-about'),
     path('login/', views.login, name='SUni-login'),
+    path('signup/', views.signup, name='SUni-signup'),
 ]

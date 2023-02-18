@@ -3,6 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
 
 
+
+html, body { height: 100%;}
+
+body > footer {
+  position: sticky;
+  top: 100vh;
+}
+
 *{
     font-family: 'Space Grotesk', sans-serif;
 }
@@ -14,7 +22,7 @@
 .body-main {
     background: #161527;
     background-image: url(https://i.imgur.com/exTo76V.png);
-    background-size:cover;
+    background-position: center center;
 }
 
 h1 {
@@ -42,7 +50,8 @@ a {
     float: left;
     text-align: center;
     color: #E5D8B6;
-    width: 40%;
+    width: 45%;
+    
 }
 
 .loginBox h1 {
@@ -58,23 +67,61 @@ a {
     color: #E5D8B6;
 }
 
+.loginBox form {
+    display: inline-block;
+}
+
+.checkbox {
+    display: flex;
+    float: left;
+    padding-top: 1rem;
+    text-align: left;
+}
+
 .signupOptions {
+    float: left;
     background-color: #3B67C6;
-    margin: 3rem;
-    border-radius: 10px;
+    width: 60%;
+    margin: 2.5rem;
+    margin-left: 8.5rem;
+    padding-bottom: 1rem;
+    box-shadow: 8px 4px 8px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+}
+
+.list-Apple {
+    float: left;
+    width: 25%;
+}
+
+.list-Facebook {
+    float: left;
+    width: 25%;
+    padding-top: 5px;
+}
+
+.list-Google {
+    float: left;
+    width: 25%;
+    padding-top: 3px;
+}
+
+.list-Twitter {
+    float: left;
+    width: 25%;
+    padding-top: 7px;
 }
 
 .branding {
-    float: left;
-    margin-left: 5rem;
-    width: 60%;
+    background-image: url(https://cdn.discordapp.com/attachments/1076345577270431774/1076591140444323860/Wider.png);
+    background-position: center center;
+    background-size: 110%;
+    float: right;
+    width: 55%;
 }
 
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0; 
-    right: 0;
     background: linear-gradient(180deg, #D9B6E0 9.17%, #E5D8B6 78.55%);
 }
