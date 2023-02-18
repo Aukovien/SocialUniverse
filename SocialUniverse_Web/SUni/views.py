@@ -4,14 +4,23 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
-    return HttpResponse('<p>home</p')
+    return render(request, 'SUni/home.html')
 
 def contact(request):
-    return HttpResponse('<p>contact</p>')
+    context = {
+        'title': 'Contact'
+    }
+    return render(request, 'SUni/contact.html', context)
 
 def about(request):
-    return HttpResponse('<p>about</p>')
+    context = {
+        'title': 'About'
+    }
+    return render(request, 'SUni/about.html', context)
 
 def login(request):
-    return HttpResponse('<p>login</p>')
+    context = {
+        'title': 'Login'
+    }
+    return render(request, 'SUni/login.html', context)
 
